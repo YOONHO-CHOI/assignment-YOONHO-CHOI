@@ -1,0 +1,3 @@
+GRU가 Reset Gate로만 구성되는 경우, 현재 step의 입력이 hidden state 값 결정에 영향을 많이 끼치게 되는 구조가 되어 Longterm에 대한 정보는 크게 남아있지 않을 것이다.
+반대로 Update Gate로만 GRU가 구성되면, Long term dependency가 존속되는 구조가 되므로, 현재의 입력이 영향을 크게 미치지 못하고, 첫 step에 가까운 정보가 남아있게 될 것이다.
+(변화에 유연하지 못한 구조가 될 것이다.)
