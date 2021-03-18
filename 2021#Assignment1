@@ -1,0 +1,1 @@
+1. Stepwise로 계속하여 Backpropagation이 진행되므로, step이 긴(long sequence) 모델의 경우 Vanishing gradient 문제가 발생한다.
