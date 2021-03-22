@@ -1,2 +1,2 @@
-1. Stepwise로 계속하여 Backpropagation이 진행되므로, step이 긴(long sequence) 모델의 경우 Vanishing gradient 문제가 발생한다.
+1. Stepwise로 계속하여 Backpropagation이 진행되므로, step이 긴(long sequence) 모델의 경우 Vanishing/Exploding gradient 문제가 발생한다.
 2. 데이터가 충분한 경우 적절한 수의 hidden layer추가는 성능 향상에 도움되나, 지나치게 깊어지면 vanishing gradient 및 underfitting의 문제가 발생한다.
