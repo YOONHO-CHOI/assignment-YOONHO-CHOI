@@ -2,5 +2,9 @@
 다만 positional encoding은 input sequence의 step 개념을 explicit하게 대신하는 vector이기에, 입력되는 sequence는 정상적인 order로 입력되어야 한다.
 
 2. Transformer는 input sequence 전체를 보고 output을 도출하는 방식이다. 따라서 지나치게 긴 input sequence가 입력되는 경우 계산 비용에서 비효율적일 수 있다.
+
+이론상, RNN과 같이 Fixed length의 context vector를 정해놓지 않고 Sentence의 길이만큼 context vector가 형성되기에 매우 긴 sequence또한 다룰 수 있다 하나, 
+물리적인 메모리가 허용하는 범위 이내에서 진행되어야 한다.
+
 또한 Transformer의 attention mechanism은 전체 입력 sequence로부터 softmax로부터 도출된 weighting을 주는 방식이기에, 길이가 너무 길면 적절한 weighting을 학습하기 어려울 수 있다.
 이는 전체적인 성능의 불안정성으로 직결될 수 있다. (reference: Theoretical Limitations of Self-Attention in Neural Sequence Models) 
